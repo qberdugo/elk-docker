@@ -87,7 +87,7 @@ stop() {
     for i in 1 2 3 4 5; do
       echo "Waiting for $name (pid $pid) to die..."
       status || break
-      sleep 1
+      sleep 3
     done
     if status; then
       echo "$name stop failed; still running."
